@@ -1,0 +1,145 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class='jumbotron'>
+        <h1>Totally Awesome Trivia Game</h1>
+        <h2>Answer these questions before the time runs out</h2>
+
+    </div>
+    <div>
+        <h3 id='timer' class='text-center'>Timer:</h3>
+    </div>
+
+    <div class="trivia-quest text-center">
+        <p class="quest">What is the largest living Mamal?</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct"> Blue whale
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Elephant   
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Sperm Whale   
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+                <input type="radio" name="optradio" class="optradio" value="wrong"> Giraffe  
+              </label>
+        </form>
+
+        <p class="quest">2.What did the "D" in D-day stand for?</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct">Day 
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Doom  
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Dunkirk  
+            </label>
+        </form>
+
+        <p class="quest">3.Which continent are the Andes mountains located in?</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> North America
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct"> South America  
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong">Asia
+            </label>
+        </form>
+
+        <p class="quest">4. How many colors are in the rainbow</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> 8 
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> 6  
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct">  7  
+            </label>
+        </form>
+
+        <p class="quest">5. How many squares are on a chess Board?</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> 60  
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct"> 64 
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> 62 
+            </label>
+        </form>
+
+        <p class="quest">6. What delicacy is Hunted with pigs and sometimes Dawgs?</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct"> Truffles
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Mushrooms 
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Mustard Seeds
+            </label>
+        </form>
+
+        <p class="quest">7. What is Rum distilled from?</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct"> Sugar Cane 
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Coconut
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Guava Juice
+            </label>
+        </form>
+
+        <p class="quest">8. What is the first name of the Author of "The Canterbury Tales" ?</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Jeffrey     
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct"> Geoffrey    
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> James    
+            </label>
+        </form>
+    
+<!-- Done -->
+        <div>
+            <p class="lead btn btn-lg btn-success" id="game-done">Done
+            </p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- TRIVIA JS -->
+    <script src="./assets/js/app.js"></script>  
+
+</body>
+
+
+
+</html>
