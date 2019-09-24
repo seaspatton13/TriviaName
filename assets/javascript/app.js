@@ -51,6 +51,6 @@ var unanswered = 0;
 
 // hide the questions until the game starts 
 
-$('#countdown').hide();
-$('.trivia-ques').hide();
+$('#timer').hide();
+$('.trivia-quest').hide();
 $('.results').hide();
