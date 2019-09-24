@@ -10,7 +10,7 @@
 <body>
     <div class='jumbotron'>
         <h1>Totally Awesome Trivia Game</h1>
-        <p class= "btn btn-lg btn-success" id="game-start">Start</p>
+        <p class= "btn btn-lg btn-success" id="gameStart">Start</p>
         <h2>Answer these questions before the time runs out</h2>
 
     </div>
@@ -18,7 +18,7 @@
         <h3 id='timer' class='text-center'>Timer:</h3>
     </div>
 
-    <div class="trivia-quest text-center">
+    <div class="triviaQuest text-center">
         <p class="quest">What is the largest living Mamal?</p>
         <form class="question">
             <label class="form-check form-check-inline text-mysize">
@@ -128,8 +128,15 @@
     
 <!-- Done -->
         <div>
-            <p class="lead btn btn-lg btn-success" id="game-done">Done
+            <p class="lead btn btn-lg btn-success" id="gameDone">Done
             </p>
+        </div>
+<!-- reults page -->
+        <div class="results">
+            <p class="lead2" id="summary">All Done!</p> 
+            <p class="lead2" id="correctScore">Correct Answers:</p>
+            <p class="lead2" id="wrongScore"></p>
+            <p class="lead2" id="unanswered"></p>
         </div>
     </div>
 

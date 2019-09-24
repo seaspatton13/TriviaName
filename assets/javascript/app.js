@@ -49,8 +49,22 @@ var correctCount = 0;
 var wrongCount = 0;  
 var unanswered = 0;
 
-// hide the questions until the game starts 
 
-$('#timer').hide();
-$('.trivia-quest').hide();
-$('.results').hide();
+$(document).ready(function () {
+    // hide the questions until the game starts 
+    $('#timer').hide();
+    $('.triviaquest').hide();
+    $('.results').hide();
+
+// show questions when game starts
+   function showQustions(){
+       $('#timer').show();
+       $('.triviaQuest').show();
+       $('#gameDone')
+   }
+    
+
+
+}() 
+
+
